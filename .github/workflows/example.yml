@@ -1,0 +1,14 @@
+name: Example Workflow
+
+on:
+  push:
+    branches:
+      - master  # Trigger workflow on push to main branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Use the latest version of Ubuntu as the runner
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
